@@ -1,0 +1,104 @@
+<!-- BEGIN content -->
+<div class="tab-content">
+
+	<div id="status" class="tab-pane fade show active" role="tabpanel">
+		<h2>Network status</h2>
+		<div id="statusLastUpdated"></div>
+		<div id="statusContent"></div>
+		<div id="statusInterfaces">
+			<h3>Network interfaces</h3>
+			<table aria-label="networkDevices">
+				<thead>
+				<tr>
+					<th scope="col">name</th>
+					<th scope="col">abilities</th>
+					<th scope="col">broadcast</th>
+					<th scope="col">IP</th>
+					<th scope="col">MTU</th>
+					<th scope="col">netmask</th>
+					<th scope="col">MBit/s</th>
+					<th scope="col">state</th>
+				</tr>
+				</thead>
+				<tbody id="networkDevices">
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="scan" class="tab-pane fade show" role="tabpanel">
+		<h2>Scan wifi networks</h2>
+		<div id="scanLastUpdated"></div>
+		<div id="availableWifiNetworks"></div>
+	</div>
+
+	<div id="custom" class="tab-pane fade show" role="tabpanel">
+		<form id="formFieldsCustom" class="form-horizontal">
+
+			<fieldset>
+				<div class="form-group col-md-4">
+					<h2>Custom settings</h2>
+
+					<label class="control-label" for="deviceName">custom device name</label>
+					<input id="deviceName" name="deviceName" type="text" class="form-control input-md" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required=""/>
+
+					<label class="control-label" for="color">color</label>
+					<input id="color" name="color" type="text" class="form-control input-md" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required=""/>
+
+					<br/>
+					<button id="customButton" type="button" class="btn btn-info"><span class="btn-label"><i class="glyphicon glyphicon-save"></i></span>save and reload <strong>wifi Web UI</strong></button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="system" class="tab-pane fade show" role="tabpanel">
+		<form id="formFieldsSystem" class="form-horizontal">
+
+			<fieldset>
+				<div class="form-group col-md-4">
+					<h2>System settings</h2>
+					<br/>
+					<button id="rebootButton" type="button" class="btn btn-info"><span class="btn-label"><i class="glyphicon glyphicon-save"></i></span>reboot system <strong>now</strong></button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="wifi" class="tab-pane fade show" role="tabpanel">
+		<form id="formFieldsWifi" class="form-horizontal">
+			<fieldset>
+				<div class="form-group col-md-4">
+					<h2>Wifi settings</h2>
+
+					<label class="control-label" for="ssid">SSID (wifi network name)</label>
+					<input id="ssid" name="ssid" type="text" class="form-control input-md" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required=""/>
+
+					<label class="control-label" for="psk">pre shared key (PSK or password)</label>
+					<input id="psk" name="psk" type="password" class="form-control input-md" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required=""/>
+
+					<br/>
+					<button id="wifiButton" type="button" class="btn btn-info"><span class="btn-label"><i class="glyphicon glyphicon-save"></i></span>save and reload <strong>wifi Web UI</strong></button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="about" class="tab-pane fade show" role="tabpanel">
+				<h2>About <strong>wifi Web UI</strong></h2>
+				<p>With <strong>wifi Web UI</strong> you can plug your raspberry pi's LAN interface to the WAN interface of your fitzbox and share a nearby wifi.
+				<hr />
+				<p>To configure the <strong>SSID</strong> and the <strong>PSK</strong> go to  <i>settings</i> => <i>wifi</i> in the main menu.</p>
+	</div>
+
+	<div id="help" class="tab-pane fade show" role="tabpanel">
+				<h2>Help</h2>
+				<p>With <strong>wifi Web UI</strong> you can plug your raspberry pi's LAN interface to the WAN interface of your fitzbox and share a nearby wifi.
+				<hr />
+				<p>All you have to do is to configure the <strong>SSID</strong> and the <strong>PSK</strong> (pre shared key) of the wifi you want to bridge to your fitzbox (1:1 NAT) and your're done. After that you can connect to your fitzbox's wifi or LAN to use the internet as usual.</p>
+				<hr />
+				<p>To configure the <strong>SSID</strong> and the <strong>PSK</strong> go to  <i>settings</i> => <i>wifi</i> in the main menu.</p>
+	</div>
+</div>
+
+<!-- END content -->

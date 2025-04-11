@@ -1,0 +1,11 @@
+{
+   "wifi" : {
+      "psk" : "54983399583947513720",
+      "ssid" : "test"
+   },
+   "custom" : {
+      "deviceName" : "Baustellen-Case 1",
+      "color" : "#045186"
+   }
+}
+

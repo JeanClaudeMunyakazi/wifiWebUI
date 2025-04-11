@@ -1,0 +1,31 @@
+	<!-- BEGIN site/header -->
+	<header>
+		<img src="./static/images/ c.config.logo" id="logoImage" class="noSelect" alt=" companyName " title="[ companyName ]"/>
+		<h1 class="noSelect"> [% c.config.name %] <span class="version"> version </span></h1>
+		<p class="noSelect"> [% deviceName %]</p>
+
+		<br class="clearFloat noSelect"/>
+			<ul id="mainMenu" class="nav nav-pills noSelect">
+				<li class="nav-item">
+					<a class="nav-link active" role="tab" data-toggle="tab" href="#status" id="defaultTab">network status</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" role="tab" data-toggle="tab" href="#scan" id="scanButton">scan wifi networks</a>
+				</li>
+				<li class="dropdown nav-item">
+				  <button class="btn btn-secondary dropdown-toggle sub-men" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">settings</button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<button class="dropdown-item" data-toggle="tab" href="#wifi" type="button">wifi</button>
+					<button class="dropdown-item" data-toggle="tab" href="#custom" type="button">custom</button>
+					<button class="dropdown-item" data-toggle="tab" href="#system" type="button">system</button>
+				  </div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" role="tab" data-toggle="tab" href="#about">about</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" role="tab" data-toggle="tab" href="#help">help</a>
+				</li>
+			</ul>
+	</header>
+	<!-- END site/header -->

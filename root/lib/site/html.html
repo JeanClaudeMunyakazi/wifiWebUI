@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<html manifest="[% baseURL %]static/misc/manifestAppcache.mf">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> c.config.name ] - [ deviceName ]</title>
+	<meta name="description" content="[% site.description %]">
+	<meta name="keywords" content="[% site.keywords %]">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/wifi-web-ui.main.css">
+
+<!-- custom css -->
+	<style>
+		.sub-men {
+			color: color ;
+			background-color: initial;
+			border-color: transparent;
+		}
+		
+		.sub-men:hover,
+		.sub-men:active,
+		.dropdown-item.active,
+		.dropdown-item:active,
+		.btn-secondary:not(:disabled):not(.disabled).active,
+		.btn-secondary:not(:disabled):not(.disabled):active,
+		.show>.btn-secondary.dropdown-toggle {
+			color: #fff;
+			background-color: color;
+			border-color: color ;
+		}
+
+		.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+			color: #fff;
+			background-color: color;
+			border-color: color;
+		}
+
+		.dropdown-item:focus, .dropdown-item:hover {
+			color: #FFF;
+			background-color: color;
+			border-color: color;
+		}
+
+		a,
+		header h1,
+		header p,
+		header a:link,
+		.sub-men {
+			color: color;
+		}
+
+		.nav-pills .nav-link.active, .nav-pills .show>.nav-link,
+		.sub-men:hover,
+		.sub-men:active,
+		.dropdown-item.active, 
+		.dropdown-item:active,
+		.btn-secondary:not(:disabled):not(.disabled).active,
+		.btn-secondary:not(:disabled):not(.disabled):active,
+		.show>.btn-secondary.dropdown-toggle {
+			background-color: color;
+			border-color: color;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="siteWrapper">
+		[% content %]
+	</div>
+
+	<script src="./static/js/jquery3.1.1.min.js"></script>
+	<script src="./static/js/bootstrap.bundle.min.js"></script>
+	<script src="./static/js/jquery.bootstrap-growl.min.js"></script>
+	<script src="./static/js/wifi-web-ui.main.js"></script>
+</body>
+
+</html>

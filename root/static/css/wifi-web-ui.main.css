@@ -1,0 +1,660 @@
+@font-face {
+	font-family: 'Conv_Digital';
+	src: url('../webfonts/Digital.eot');
+	src: local('☺'), url('../webfonts/Digital.woff') format('woff'), url('../webfonts/Digital.ttf') format('truetype'), url('../webfonts/Digital.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.tab-content p strong {
+	font-weight: bold;
+    color: #2b2b2b;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #F9F9F9;
+	color: rgba(50, 50, 50, 1);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Arial;
+}
+
+a {
+	color: #045186;
+}
+
+img#logoImage {
+    margin: 0px 50px 20px 0px;
+	padding: 0px 15px;
+    float: left;
+	height: 100px;
+}
+
+img#logoImage:hover, img#logoImage:active {
+	cursor: pointer;
+}
+
+br.clearFloat {
+	float: none;
+    clear: both;
+}
+
+ul#overallStatusPanel,
+ul#mainMenu,
+ul#filterMenu {
+	margin: 5px 0px 5px 0px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+    border-radius: initial;
+	box-shadow: initial;
+	background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+ul#overallStatusPanel {
+	padding: .2rem .5rem .2rem 17px;
+	font-size: 14px;
+	margin-bottom: 9px;
+}
+
+ul#filterMenu {
+	margin: 5px 0px 15px 0px;
+}
+
+ul#filterMenu .navbar-text {
+    padding: .5rem .5rem .5rem 17px;
+	font-size: 12px;
+	}
+	
+ul#filterMenu li button.btn-sm {
+    margin: 5.5px -3px 3px 5px;
+	padding: .08rem .3rem;
+	font-size: 12px;
+}
+
+.btn-success:hover {
+	color: #FFFFFF;
+    background-color: #51BC68;
+    border-color: #27AA42;
+}
+
+.btn-outline-success:hover {
+    color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+}
+
+.btn-warning:hover {
+	color: #FFFFFF;
+    background-color: #F0AD4E;
+    border-color: #EEA236;
+}
+
+.btn-outline-warning:hover {
+    color: #ffc107;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffc107;
+}
+
+.btn-danger:hover {
+	color: #FFFFFF;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    color: #dc3545;
+    background-color: transparent;
+    background-image: none;
+    border-color: #dc3545;
+}
+
+#enableEditing {
+	position: absolute;
+	right: 20px;
+	padding: 1px 3px 1px 3px;
+	margin: 0px;
+	font-size: 12px;
+	top: 96px;
+	border: 1px solid #CCC;
+}
+
+header {
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px;
+}
+
+header h1 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 135%;
+	margin: 0px;
+	padding: 10px 0px 0px 3px;
+	color: #045186;
+}
+
+header h1 span.version {
+	font-size: 10px;
+}
+
+header p {
+	font-size: 20px;
+	line-height: 135%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 3px;
+	font-weight: bold;
+	color: #045186;
+}
+
+label {
+	padding: 0px 0px 0px 11px;
+	margin: 0px;
+}
+
+.h2, h2 {
+    font-size: 1.5rem;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+#status h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 1.2rem;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+span.online {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    margin: 0px 0px 15px 10px;
+    color: #FFFFFF;
+    background-color: #51BC68;
+    border-color: #27AA42;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+span.offline {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    margin: 0px 0px 15px 10px;
+    color: #FFFFFF;
+    background-color: #D9534F;
+    border-color: #D43F3A;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+div#statusLastUpdated {
+    float: none;
+    clear: both;
+    display: block;
+}
+
+#statusContent, #statusInterfaces, #statusLastUpdated, #scanLastUpdated {
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#statusInterfaces table {
+	width: 100%;
+}
+
+#statusInterfaces table th, #statusInterfaces table td {
+    padding: 5px;
+}
+
+ul#currentWifiParameter li:nth-child(even),
+#statusInterfaces table tr:nth-child(even) {
+	background-color: rgb(226 222 222);
+}
+
+ul#currentWifiParameter {
+    width: fit-content;
+}
+
+ul#currentWifiParameter li {
+	padding: 5px;
+}
+
+#statusContent h3 {
+    float: left;
+}
+
+#statusContent p {
+    float: none;
+    clear: both;
+}
+
+#statusContent ul.list-unstyled {
+    float: none;
+    clear: both;
+}
+
+form#formFieldsMain {
+	padding: 10px;
+}
+
+input[type=text], input[type=password] {
+    margin-bottom: 20px;
+}
+
+form#formFieldsMain input[type=text],
+form#formFieldsMain input[type=number],
+form#formFieldsMain textarea,
+form#formFieldsMain select {
+	font-family: "Lucida Console", Monaco, monospace;
+	margin: 0px 0px 20px 0px;
+	box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.2);
+}
+
+form#formFieldsMain textarea {
+	resize: vertical;
+	min-height: 90px;
+}
+
+button > strong {
+	padding-right: 5px;
+}
+
+span.btn-label {
+    margin: 0px 5px 0px 0px;
+    top: 1px;
+    position: relative;
+}
+
+.slider-handle {
+	background-image: none;
+}
+
+.slider-track {
+    background-image: linear-gradient(to bottom,#999 0,#f9f9f9 100%);
+}
+
+li.nav-item.title {
+    font-weight: bold;
+}
+
+li.nav-item {
+    margin-right: 5px;
+}
+
+li.nav-item:last-child {
+    margin-right: 0px;
+}
+
+.sub-men {
+    height: 40px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.tab-content {
+	padding: 0px 15px;
+}	
+
+div#status, div#scan, div#about, div#help {
+	margin: 25px 0px 0px 15px;
+
+}
+
+
+.bootstrap-growl {
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+	min-height: 55px;
+}
+
+.bootstrap-growl strong {
+	display: inline-block;
+	font-size: 15px;
+    font-weight: bold;
+	word-break: keep-all;
+}
+
+.alert-success, .btn-success {
+    color: #FFFFFF;
+    background-color: #51BC68;
+	border-color: #27AA42;
+}
+
+.alert-danger {
+    color: #FFFFFF;
+    background-color: #D9534F;
+    border-color: #D43F3A;
+}
+
+.alert-warning, .btn-warning {
+    color: #FFFFFF;
+    background-color: #F0AD4E;
+    border-color: #EEA236;
+}
+
+.alert-info, .btn-info {
+	color: #FFFFFF;
+    background-color: #4ca5bf;
+    border-color: #46B8DA;
+}
+
+.close {
+    color: #FFFFFF;
+    text-shadow: 0 0px 0px transparent;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    border: 1px solid transparent;
+    padding: 0px 1px 0px 1px;
+}
+
+.close:focus, .close:hover {
+	color: #FFFFFF;
+    text-shadow: 0 0px 0px transparent;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 0px 1px 0px 1px;
+}
+
+footer {
+	margin: 20px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+footer p#copyright {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+	font-size: 13px;
+}
+
+
+#availableWifiNetworks ol li {
+	padding: 3px 10px 3px 10px;
+    width: max-content;
+	user-select: none;
+	border-radius: 4px;
+    border: 1px solid #c5c5c5;
+    margin: 0px 0px 8px 0px;
+}
+
+#availableWifiNetworks ol li:hover {
+	width: max-content;
+    background: #065286;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#availableWifiNetworks ol li:hover::marker {
+	color: rgba(50, 50, 50, 1);
+}
+
+
+div#currentESSID {
+	background-color: #dadada;
+    width: max-content;
+    border-radius: 3px;
+    color: #000;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 0px;
+    border: #7d7d7d 1px solid;
+    padding: 1px 5px 0px 5px;
+}
+
+span.showWhiteSpace {
+    background-color: #D9534F;
+    border: #ff8d07 solid 1px;
+    padding: 0px 0px;
+    border-radius: 3px;
+    margin: 0px;
+}
+
+span.showWhiteSpaceExample {
+    background-color: #D9534F;
+    border: #ff8d07 solid 1px;
+    padding:0px 4px;
+    border-radius: 3px;
+    margin: 0px;
+}
+
+
+@media (min-width: 320px) {
+
+
+
+	.list-group-item {
+		padding: .7rem .35rem .15rem .35rem;
+	}
+
+	.list-group-item .card-header {
+		padding: .35rem .35rem .15rem .35rem;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0px;
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 410px) {
+
+	ul#filterMenu li button.btn-sm {
+		margin: 5.5px -3px 3px 17px;
+	}
+
+	ul#filterMenu {
+		padding-bottom: 3px;
+	}
+}
+
+
+@media (min-width: 568px) {
+	.card {
+		margin: 0px 5px 10px 5px !important;
+		min-width: 23.5%;
+		font-size: 14px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+	img#logoImage {
+		height: 75px;
+		margin: 0px 20px 10px 0px;
+	}
+
+	header h1 {
+		font-size: 22px;
+	}
+
+	header p {
+		font-size: 20px;
+	}
+
+	ul#mainMenu {
+		margin: 0px 0px 5px 0px;
+	}
+
+	.card {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* tools and helper classes */
+
+.noSelect,
+.bootstrap-growl,
+header,
+nav,
+h1,
+h2,
+p,
+br,
+ul
+img,
+label,
+footer,
+.bootstrap-growl,
+.card {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-rselect: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 767.98px) {
+
+	.card {
+		max-width: 179.5px;
+	}
+
+	.list-group-item {
+		padding: .35rem .35rem .15rem .35rem;
+	}
+
+	.list-group-item .card-header {
+		padding: .35rem .35rem .15rem .35rem;
+	}
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+
+	img#logoImage {
+		height: 75px;
+		margin: 0px 20px 10px 0px;
+	}
+
+	header {
+		padding: 0px;
+	}
+
+	.tab-content {
+		padding: 0px 15px;
+	}
+
+	header h1 {
+		font-size: 22px;
+	}
+
+	header p {
+		font-size: 20px;
+	}
+
+	ul#mainMenu {
+		margin: 0px 0px 5px 0px;
+	}
+
+	ul#filterMenu {
+		margin: 0px 5px 15px 5px;
+	}
+
+	.card {
+		margin: 0px 5px 10px 5px !important;
+		min-width: 240px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 970px) {
+	#statusInterfaces table th, #statusInterfaces table td {
+		padding: 2px;
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 870px) {
+	#statusInterfaces table th, #statusInterfaces table td {
+		padding: 3px;
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 800px) {
+	#statusInterfaces thead {
+		display: none;
+	}
+
+	#statusInterfaces td {
+		display: list-item;
+		list-style: none;
+		font-size: 1rem !important;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.card {
+		margin: 0px 5px 10px 5px !important;
+		min-width: 15%;
+		max-width: 159px;
+		font-size: 14px;
+	}
+
+	footer {
+		position: relative;
+		bottom: 5px;
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 1025px) {
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	img#logoImage {
+		height: 100px;
+		margin: 0px 50px 20px 0px;
+	}
+
+	header h1 {
+		font-size: 28px;
+		padding-top: 20px;
+	}
+
+	header p {
+		font-size: 24px;
+	}
+
+	.card {
+		min-width: 226px;
+		max-width: 226px;
+	}
+}
+
+
+/*EOF*/
