@@ -46,3 +46,69 @@ Open your Browser and go to the following URL: ```http://192.168.55.1```
 Type in ```admin``` as user and ```hammer4296```
 Then scan for your device and click on the ´desired SSID.
 Put in the PSK and click on "set and reboot".
+
+---------------------------------------------------------------------------------------------
+
+#  IHK Abschlussprojekt – Mobile Office Case mit Raspberry Pi (WLAN–LAN Bridge)
+
+Dieses Repository dokumentiert mein Abschlussprojekt zur IHK-Prüfung als IT-Systemelektroniker.
+
+##  Projekttitel
+
+**„Bereitstellung eines Mobile Office Case mit einer WLAN zu LAN-Brücke“**
+
+##  Projektziel
+
+Das Ziel war es, eine flexible und kostengünstige Lösung zu entwickeln, um LAN-basierte Geräte (z. B. Laptops, Drucker) vor Ort über WLAN ins Internet zu bringen. Die Lösung basiert auf einem Raspberry Pi, der als Netzwerkbrücke (WLAN zu LAN) dient.
+
+---
+
+##  Projektinhalte
+
+- Raspberry Pi 4 mit Raspberry Pi OS Lite
+- Netzwerkkonfiguration mit `dnsmasq` und `iptables`
+- NAT, DHCP, lokale DNS-Services
+- Fernverwaltung über mRemoteNG
+- Stromversorgung über mobile Powerbank
+- Hardware-Komponenten im praktischen Office Case
+
+---
+
+##  Verzeichnisstruktur
+
+```bash
+.
+├── config/           # Beispielkonfigurationen (dnsmasq, Interfaces)
+├── bashScripts/      # Automatisierungsskripte
+├── lib/, root/, t/   # Projektstruktur
+├── deployment/       # Installationshinweise
+├── README.md         # Diese Datei
+├── README.pdf        # Projektbeschreibung (PDF)
+├── wifiwebui.conf    # Konfiguration für Weboberfläche
+├── wifiwebui.psgi    # CGI-basierte Verwaltungsoberfläche
+
+
+## Netzwerkarchitektur
+
+. Pi verbindet sich mit dem Kunden-WLAN
+
+. NAT übersetzt die Adressen
+
+. Endgeräte erhalten IPs über lokalen DHCP
+
+##  Getestet wurde:
+
+WLAN-Verbindung über Raspberry Pi
+
+DHCP- und NAT-Funktion
+
+Stabile Internetverbindung über LAN-Port
+
+# Autor
+Jean-Claude Munyakazi
+ Berlin
+ IT-Systemelektroniker (IHK)
+ https://munyakazi.org
+
+ # Lizenz
+Dieses Projekt steht unter der MIT Lizenz.
