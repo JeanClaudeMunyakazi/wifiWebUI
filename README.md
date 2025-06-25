@@ -77,7 +77,7 @@ Das Ziel war es, eine flexible und kostengünstige Lösung zu entwickeln, um LAN
 ##  Verzeichnisstruktur
 
 ```bash
-.
+
 ├── config/           # Beispielkonfigurationen (dnsmasq, Interfaces)
 ├── bashScripts/      # Automatisierungsskripte
 ├── lib/, root/, t/   # Projektstruktur
