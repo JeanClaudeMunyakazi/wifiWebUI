@@ -16,9 +16,9 @@ nano /etc/ssh/sshd_config
 ```
 Change the line ```#PermitRootLogin without-password``` to ```PermitRootLogin yes```
 
-To reload the new configuration you just changed, you have to restart the sshd daemon by the following command.
+To reload the new configuration you just changed, you have to restart the sshd daemon with the following command.
 
-*If you may have made any mistakes, the restart command will tell you with an error message, what you may have done wrong.*
+*If you have made any mistakes, the restart command will tell you with an error message what you may have done wrong.*
 ```bash
 /etc/init.d/ssh restart
 ```
@@ -39,12 +39,12 @@ sh /opt/wifiWebUI/deployment/install.sh
 ```
 
 ### After the Installation
-Take the ethernet cable out of the router and connect the raspi to your local PC or fritz!Box.
+Take the Ethernet cable out of the router and connect the Raspberry Pi to your local PC or fritz!Box.
 
 ### Configure your WiFi Network in the Web user Interface
 Open your Browser and go to the following URL: ```http://192.168.55.1```
 Type in ```admin``` as user and ```hammer4296```
-Then scan for your device and click on the ´desired SSID.
+Then scan for your device and click on the desired SSID.
 Put in the PSK and click on "set and reboot".
 
 ---------------------------------------------------------------------------------------------
@@ -87,6 +87,7 @@ Das Ziel war es, eine flexible und kostengünstige Lösung zu entwickeln, um LAN
 ├── wifiwebui.conf    # Konfiguration für Weboberfläche
 ├── wifiwebui.psgi    # CGI-basierte Verwaltungsoberfläche
 
+---
 
 ## Netzwerkarchitektur
 
